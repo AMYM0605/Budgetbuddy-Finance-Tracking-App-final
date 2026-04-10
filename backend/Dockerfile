@@ -3,8 +3,8 @@ FROM maven:3.9.9-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
-# Copy EVERYTHING inside backend
-COPY backend/ .
+# Copy everything inside backend (now it's root)
+COPY . .
 
 RUN mvn clean package -DskipTests
 

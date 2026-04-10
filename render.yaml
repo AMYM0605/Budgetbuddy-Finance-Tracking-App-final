@@ -63,7 +63,7 @@
   plan: free
 
   dockerfilePath: backend/Dockerfile
-  dockerContext: .
+  dockerContext: backend
 
   envVars:
     - key: DB_URL
